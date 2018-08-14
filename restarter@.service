@@ -1,0 +1,9 @@
+[Unit]
+Description=perform restart a service
+
+[Service]
+ExecStart=/bin/systemctl --user restart %i
+Type=oneshot
+
+[Install]
+WantedBy=default.target

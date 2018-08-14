@@ -1,0 +1,8 @@
+[Unit]
+Description=trigger restart of a service when this file is touched
+
+[Path]
+PathModified=/tmp/restarter
+
+[Install]
+WantedBy=default.target
